@@ -1,13 +1,13 @@
 // คำนวณ BMI
-function hy(a: number, b: number){
-    return (a/(b*b))
+function hy(weight: number, high: number){
+    return (weight/(high*high))
 }
   
   console.log (hy(50,1.65))
 
  
 // เกณฑ์ BMI
-function bmi(high: number, weight: number){
+function bmi(weight: number, high: number){
     let score: number = (weight / (high*high))
 
     if (score < 18.50) {
@@ -30,7 +30,7 @@ console.log (bmi(50, 1.65))
 
 
 // ภาวะเสี่ยงต่อโรค
-function disease(high: number, weight: number){
+function disease(weight: number, high: number){
     let score: number = (weight / (high*high))
 
     if (score < 18.50) {
