@@ -18,22 +18,34 @@ function grade(homework: number, midterm: number, final: number)
 
 console.log(grade(100, 100,100))
 
+
+
+
 function helloWorld() {
     console.log("สวัสดี");
 } 
 
-้helloWorld() 
+้helloWorld()                   //ไม่มีทั้ง output , Input
+
+
+
 
 function HelloName(name: string) {
     console.log(name)
 }
 
-helloName('Max') 
+helloName('Max')        //มีแค่ input
+
+
+
+
 function getPi() {
     return 3.14
 }
 
-console.log(getPi()) 
+console.log(getPi())        //มีแค่ output
+
+
 
 
 function st(fname: string, sname: string) {
