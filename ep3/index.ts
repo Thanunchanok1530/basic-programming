@@ -21,11 +21,9 @@ console.log(grade(100, 100,100))
 
 
 
-function helloWorld() {
+function HelloWorld() {
     console.log("สวัสดี");
-} 
-
-้helloWorld()                   //ไม่มีทั้ง output , Input
+}                  //ไม่มีทั้ง output , Input
 
 
 
