@@ -154,3 +154,60 @@ console.log(peopleMore)
 
 
 
+
+//โจทย์ยาก
+const products = [
+    { price: 100 },
+    { price: 200 },
+    { price: 150 },
+    { price: 300 },
+    { price: 250 },
+];
+
+//ยาก
+function updatePriceWithForLoop(
+    products: {
+        price: number;
+    }[]
+) {
+//filter
+    const m: {
+        price: number;
+    }[] = [];
+    for(let i = 0; i < products.length; i++) {
+        if (products[i].price > 150) {
+            m.push(products[i])
+        }
+    }
+}
+
+//update price 10%
+for(let i = 0; i < products.length; i++) {
+    m[i].price = m[i].price * 1.1;
+}
+
+    return m;
+
+}
+
+function updatePrice
+    (products: {
+        price: number;
+}[]) {
+    return products
+    .filter(function (elemnt, index) {
+        return elemnt.price > 150;
+    })
+    .map(function(elemnt, index) {
+        return {
+            price: elemnt.price *1.1,
+    
+        };
+    });
+}
+
+console.log(updatePriceWithForLoop(products))
+console.log(updatePrice(products))
+
+
+
